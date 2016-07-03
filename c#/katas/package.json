@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "name": "kota",
+  "description": "A quick start project for C# using NUnit",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cbayles/NUnitScaffold.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.5.2"
+  }
+}

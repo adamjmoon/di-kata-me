@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "debugType": "portable",
+    "emitEntryPoint": true
+  },
+  "commands": {
+  
+  },
+  "dependencies": {},
+  "frameworks": {
+    "netcoreapp1.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0"
+        },
+        "NUnit": "3.2.1",
+        "dotnet-test-nunit": "3.4.0-alpha-2"
+
+      },
+      "imports": ["dnxcore50","netcoreapp1.0","portable-net45+win8"]
+    }
+  },
+  "testRunner": "nunit"
+}
