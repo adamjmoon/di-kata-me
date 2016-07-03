@@ -3,7 +3,7 @@ code katas in different languages
 
 ##C# 
 ######.NET Core 1.0 Setup
-[Windows](ttps://www.microsoft.com/net/core#windows)
+[Windows](https://www.microsoft.com/net/core#windows)
 [OSX]( https://www.microsoft.com/net/core#macos)
 
 * CD c#
