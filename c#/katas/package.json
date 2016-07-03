@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cbayles/NUnitScaffold.git"
+    "url": "https://github.com/adamjmoon/di-kata-me.git"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
