@@ -6,7 +6,7 @@ code katas in different languages
 [Windows](https://www.microsoft.com/net/core#windows)
 [OSX]( https://www.microsoft.com/net/core#macos)
 
-* CD c#
-* npm install . && npm install -g gulp-cli
-* dotnet restore
-* run tests - dotnet test or `gulp test`
+* `cd c#/katas`
+* `npm install . && npm install -g gulp-cli`
+* `dotnet restore`
+* run tests - `dotnet test` or `gulp test`
