@@ -1,7 +1,8 @@
 ﻿using NUnit.Framework;
 
-namespace Kata.Katas.Add
+namespace Katas
 {
+    [TestFixture]
     public class Add_Test
     {
         Add add;
