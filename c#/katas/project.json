@@ -1,26 +1,22 @@
 {
   "version": "1.0.0-*",
-  "buildOptions": {
-    "debugType": "portable",
-    "emitEntryPoint": true
+
+  "dependencies": {
+    "NUnit": "3.4.1",
+    "dotnet-test-nunit": "3.4.0-beta-2"
   },
-  "commands": {
-  
-  },
-  "dependencies": {},
+
+  "testRunner": "nunit",
+
   "frameworks": {
     "netcoreapp1.0": {
+      "imports": "portable-net45+win8",
       "dependencies": {
         "Microsoft.NETCore.App": {
-          "type": "platform",
-          "version": "1.0.0"
-        },
-        "NUnit": "3.2.1",
-        "dotnet-test-nunit": "3.4.0-alpha-2"
-
-      },
-      "imports": ["dnxcore50","netcoreapp1.0","portable-net45+win8"]
+          "version": "1.0.1*",
+          "type": "platform"
+        }
+      }
     }
-  },
-  "testRunner": "nunit"
+  }
 }
