@@ -6,39 +6,38 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-public class Node {
+public class Node<T> {
 
-    public int value;
-    public Node Next;
+    public T value;
+    public Node<T> Next;
     
     
-    public Node(int val, Node node){
+    public Node(T val, Node<T> node){
         value = val;
         Next = node;
     }
 }
 
-public class LinkedList {
-    public List<Node> Nodes;
+public class LinkedList<T>
+{
+    public List<Node<T>> Nodes;
     
     public LinkedList(){
-        Nodes = new List<Node>();
+        Nodes = new List<Node<T>>();
     } 
 
     public void Reverse() {
-        var reverseList = new List<Node>();
+        var reverseList = new List<Node<T>>();
         var lastNode = Nodes.Where(item => item.Next == null).FirstOrDefault();
         ReverseNode(lastNode);
     }
 
-    private Node ReverseNode(Node node) {
+    private Node<T> ReverseNode(Node<T> node) {
         
         var previous = Nodes.Where(item => item.Next == node).FirstOrDefault();
         if (previous == null)
-        {
-            var previousNext = node.Next;
-            node.Next = null;
-            Console.WriteLine(node.Next);
+        {            
+            node.Next = null;            
             return node;
         }
         else {            
